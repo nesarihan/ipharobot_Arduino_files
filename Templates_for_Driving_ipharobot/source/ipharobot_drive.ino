@@ -166,7 +166,7 @@ void loop()
   nh.spinOnce();
 }
 
-void PIDCallback(const lino_msgs::PID& pid)
+void PIDCallback(const ipharobot_msgs::PID& pid)
 {
   //callback function every time PID constants are received from lino_pid for tuning
   //this callback receives pid object where P,I, and D constants are stored
