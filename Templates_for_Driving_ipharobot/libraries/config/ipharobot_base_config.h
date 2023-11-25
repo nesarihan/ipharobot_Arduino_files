@@ -19,9 +19,9 @@
 // define your robot' specs here
 #define MAX_RPM 330 // motor's maximum RPM
 #define COUNTS_PER_REV 1650 // wheel encoder's no of ticks per rev
-#define WHEEL_DIAMETER 0.10 // wheel's diameter in meters
+#define WHEEL_DIAMETER 0.26 // wheel's diameter in meters
 #define PWM_BITS 8 // PWM Resolution of the microcontroller
-#define BASE_WIDTH 0.23 // width of the plate you are using
+#define BASE_WIDTH 0.584 // width of the plate you are using
 
 // ENCODER PINS
 // left side encoders pins

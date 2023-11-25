@@ -89,12 +89,12 @@ void PIDCallback(const lino_msgs::PID& pid);
 ros::NodeHandle nh;
 
 ros::Subscriber<geometry_msgs::Twist> cmd_sub("cmd_vel", commandCallback);
-ros::Subscriber<lino_msgs::PID> pid_sub("pid", PIDCallback);
+ros::Subscriber<ipharobot_msgs::PID> pid_sub("pid", PIDCallback);
 
 ros_arduino_msgs::RawImu raw_imu_msg;
 ros::Publisher raw_imu_pub("raw_imu", &raw_imu_msg);
 
-lino_msgs::Velocities raw_vel_msg;
+ipharobot_msgs::Velocities raw_vel_msg;
 ros::Publisher raw_vel_pub("raw_vel", &raw_vel_msg);
 
 void setup()
